@@ -42,9 +42,8 @@ print B+G+'''
 ==  ====  ==  ===    ==  =  ===  ==  ===  ====  ===  ===  ===
 ==  ====  ==  ==  =  ==  =  ====    ====  ==  =  ==  ===  ===
 ==  ====  ==  ===    ==  =  =====  =====  ===   ===  ===   ==
-=============================================================
-'''
-print B+R+'Copyrigtht \N{COPYRIGHT SIGN} 2021'
+============================================================='''
+print B+R+'Copyright \N{COPYRIGHT SIGN} 2021'
 print B+G+'+-----------------------------------------------------------+'
 print B+G+'|Script ini dibuat oleh alanward55 pada tanggal 05 Juni 2021|'
 print B+G+'+-----+-------------------------+---------------------+-----+'
@@ -55,7 +54,7 @@ print B+G+'\n'
 time.sleep(1)
 ini_url = raw_input (B+BL+"[+] Masukan Link Postingan : ")
 print ''
-print B+BL+'[+] Link Postingan Anda => '+B+BL+'|'+B+W,ini_url
+print B+BL+'[+] Link Postingan Anda => '+B+W,ini_url
 
 def Autoclicker(proxy1):
     try:
