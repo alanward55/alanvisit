@@ -8,7 +8,7 @@ git clone https://github.com/alanward55/alanvisit
 cd alanvisit
 pkg install python
 pkg install python2
-python2 visit.py
+python2 visit.py ```
 
 ## Penggunaan
 Pastikan link Diawali dengan http atau https
