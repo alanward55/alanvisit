@@ -3,11 +3,11 @@ AlanVisit adalah alat untuk jigling atau menambah jumlah pengunjung pada web sec
 
 ## Instalasi
 `Pkg install git`<br>
-`git clone https://github.com/alanward55/alanvisit`
-cd alanvisit
-pkg install python
-pkg install python2
-python2 visit.py 
+`git clone https://github.com/alanward55/alanvisit`<br>
+`cd alanvisit`<br>
+`pkg install python`<br>
+`pkg install python2`<br>
+`python2 visit.py`<br>
 
 ## Penggunaan
 Pastikan link Diawali dengan http atau https
