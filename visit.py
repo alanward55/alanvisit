@@ -46,7 +46,7 @@ print B+BL+'[+] Link Postingan Anda => '+B+BL+'|'+B+W,ini_url
 def Autoclicker(proxy1):
     try:
 	proxy = proxy1.split(":")
-        print '[-]' B+P+"Postingan dikunjungi oleh =>",proxy1
+        print B+P+"[+] Postingan dikunjungi oleh =>",proxy1
         time.sleep(2)
 	proxy_set = urllib2.ProxyHandler({"http" : "%s:%d" % (proxy[0], int(proxy[1]))})
 	opener = urllib2.build_opener(proxy_set, urllib2.HTTPHandler)
