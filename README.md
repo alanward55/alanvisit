@@ -10,10 +10,10 @@ AlanVisit adalah alat untuk jigling atau menambah jumlah pengunjung pada web sec
 `python2 visit.py`<br>
 
 ## Penggunaan
-Pastikan link Diawali dengan http atau https
-Link yang di masukkan adalah link postingan
-Jika Saat Bot Sedang Berjalan Lalu [Proxy Error] Coba Periksa Koneksi Internet Dan Pastikan Link Yang Dimasukkan Benar
+-> Pastikan link Diawali dengan http atau https <br>
+-> Link yang di masukkan adalah link postingan <br>
+-> Jika Saat Bot Sedang Berjalan Lalu [Proxy Error] Coba Periksa Koneksi Internet Dan Pastikan Link Yang Dimasukkan Benar <br>
 
 ## Hubungi saya
-Email: ondeuli@gmail.com
-Phone: +6285326728933
+Email: ondeuli@gmail.com <br>
+Phone: +6285326728933 <br>
