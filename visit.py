@@ -72,7 +72,6 @@ def Autoclicker(proxy1):
     except:
            print B+R+"[!] Proxy Error\n"
            time.sleep(5)
-	sys.exit(1)
            pass
 
 def loadproxy():
