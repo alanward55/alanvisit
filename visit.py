@@ -68,7 +68,7 @@ def Autoclicker(proxy1):
 	else:
 	   print B+R+"[*] Link Gagal Di Kunjungi !\n"
            print B+R+"[!] Koneksi Gagal\n"
-		sys.exit()
+	sys.exit()
     except:
            print B+R+"[!] Proxy Error\n"
            time.sleep(5)
