@@ -30,7 +30,15 @@ server = ['Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.10 sun4u; X11)',
 		   'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.11 [en]']
 
 site = ['http://google.com','http://bing.com','http://facebook.com','http://twitter.com','http://yahoo.com']
-                                                               
+
+print B+G+'''
+ ______   ___                    __  __                  __      
+/\  _  \ /\_ \                  /\ \/\ \  __          __/\ \__   
+\ \ \L\ \\//\ \      __      ___\ \ \ \ \/\_\    ____/\_\ \ ,_\  
+ \ \  __ \ \ \ \   /'__`\  /' _ `\ \ \ \ \/\ \  /',__\/\ \ \ \/  
+  \ \ \/\ \ \_\ \_/\ \L\.\_/\ \/\ \ \ \_/ \ \ \/\__, `\ \ \ \ \_ 
+   \ \_\ \_\/\____\ \__/.\_\ \_\ \_\ `\___/\ \_\/\____/\ \_\ \__\
+    \/_/\/_/\/____/\/__/\/_/\/_/\/_/`\/__/  \/_/\/___/  \/_/\/__/'''
 print B+G+' +-----------------------------------------------------------+'
 print B+G+' |Script ini dibuat oleh alanward55 pada tanggal 05 Juni 2021|'
 print B+G+' +---+-------------------------+---------------------+-------+'
@@ -46,7 +54,7 @@ print B+BL+'[+] Link Postingan Anda => '+B+BL+'|'+B+W,ini_url
 def Autoclicker(proxy1):
     try:
 	proxy = proxy1.split(":")
-        print B+P+"[+] Postingan dikunjungi oleh =>",proxy1
+        print B+G+"[+] Postingan dikunjungi oleh =>",proxy1
         time.sleep(2)
 	proxy_set = urllib2.ProxyHandler({"http" : "%s:%d" % (proxy[0], int(proxy[1]))})
 	opener = urllib2.build_opener(proxy_set, urllib2.HTTPHandler)
@@ -56,14 +64,16 @@ def Autoclicker(proxy1):
 	f = urllib2.urlopen(ini_url)
 	#187034
 	if "google.com" in f.read():
-	   print B+G+"[*] server OK"+"\n"
+	   print B+BL+"[*] server OK"+"\n"
 	else:
 	   print B+R+"[*] Link Gagal Di Kunjungi !\n"
-           print B+R+"[!] Proxy / Connection Failed\n"
+           print B+R+"[!] Koneksi Gagal\n"
+		sys.exit()
     except:
            print B+R+"[!] Proxy Error\n"
            time.sleep(5)
            pass
+	sys.exit()
 
 def loadproxy():
     try:
@@ -77,7 +87,7 @@ def loadproxy():
         for i in proxy:
             Autoclicker(i)
     except IOError:
-	print B+W+"\n[-] Error : Proxy List Tidak Ditemukan / Belum Dibuat\n"+N
+	print B+W+"\n[-] Error : Proxy List Tidak Ada\n"+N
 	sys.exit(1)
 
 def main():
