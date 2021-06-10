@@ -32,24 +32,24 @@ server = ['Mozilla/4.0 (compatible; MSIE 5.0; SunOS 5.10 sun4u; X11)',
 site = ['http://google.com','http://bing.com','http://facebook.com','http://twitter.com','http://yahoo.com']
 
 print B+G+'''
-===========================================================
-====  =====  ================  ====  ======================
-===    ====  ================  ====  ======================
-==  ==  ===  ================  ====  ==================  ==
-=  ====  ==  ===   ===  = ===  ====  ==  ===   ===  ==    =
-=  ====  ==  ==  =  ==     ==   ==   ======  =  =======  ==
-=        ==  =====  ==  =  ===  ==  ===  ===  ====  ===  ==
-=  ====  ==  ===    ==  =  ===  ==  ===  ====  ===  ===  ==
-=  ====  ==  ==  =  ==  =  ====    ====  ==  =  ==  ===  ==
-=  ====  ==  ===    ==  =  =====  =====  ===   ===  ===   =
-===========================================================
-
+=============================================================
+=====  =====  ================  ====  =======================
+====    ====  ================  ====  =======================
+===  ==  ===  ================  ====  ==================  ===
+==  ====  ==  ===   ===  = ===  ====  ==  ===   ===  ==    ==
+==  ====  ==  ==  =  ==     ==   ==   ======  =  =======  ===
+==        ==  =====  ==  =  ===  ==  ===  ===  ====  ===  ===
+==  ====  ==  ===    ==  =  ===  ==  ===  ====  ===  ===  ===
+==  ====  ==  ==  =  ==  =  ====    ====  ==  =  ==  ===  ===
+==  ====  ==  ===    ==  =  =====  =====  ===   ===  ===   ==
+=============================================================
 '''
-print B+G+' +-----------------------------------------------------------+'
-print B+G+' |Script ini dibuat oleh alanward55 pada tanggal 05 Juni 2021|'
-print B+G+' +---+-------------------------+---------------------+-------+'
-print B+G+'     |Email: ondeuli@gmail.com |Phone: +6285326728933|'
-print B+G+'     +-------------------------+---------------------+'
+print B+R+'Copyrigtht \N{COPYRIGHT SIGN} 2021'
+print B+G+'+-----------------------------------------------------------+'
+print B+G+'|Script ini dibuat oleh alanward55 pada tanggal 05 Juni 2021|'
+print B+G+'+-----+-------------------------+---------------------+-----+'
+print B+G+'      |Email: ondeuli@gmail.com |Phone: +6285326728933|'
+print B+G+'      +-------------------------+---------------------+'
 print B+G+'\n'
 
 time.sleep(1)
@@ -61,7 +61,7 @@ def Autoclicker(proxy1):
     try:
 	proxy = proxy1.split(":")
         print B+G+"[+] Postingan dikunjungi oleh =>",proxy1
-        time.sleep(2)
+        time.sleep(1)
 	proxy_set = urllib2.ProxyHandler({"http" : "%s:%d" % (proxy[0], int(proxy[1]))})
 	opener = urllib2.build_opener(proxy_set, urllib2.HTTPHandler)
 	opener.addheaders = [('User-agent', random.choice(server)),
@@ -74,7 +74,8 @@ def Autoclicker(proxy1):
 	else:
 	   print B+R+"[*] Link Gagal Di Kunjungi !\n"
            print B+R+"[!] Koneksi Gagal\n"
-    except:
+    except KeyboarInterrupt:
+	   sys.exit(1)
            print B+R+"[!] Proxy Error\n"
            time.sleep(5)
            pass
